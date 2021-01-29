@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
+
+body {
+   font-family: 'Homenaje', sans-serif;
+    margin: 0; 
+    padding: 0;
+    background: linear-gradient(#000000, #ff8c00 25%);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#chevron {
+    display: block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 40px;
+    position: sticky;
+}
+.fa-chevron-up {
+   font-size: 1.7em;
+   margin-left: -5px;
+   color: transparent;
+   text-shadow: 0 0 2px #fff;
+}
+#chevron2 {
+    position: relative;
+    top: -12px;
+}
+#chevron3 {
+    position: relative;
+    top: -24px;
+}
+.curtain {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    box-shadow: 2px 15px 15px 10px rgba(0, 0, 0, .8);
+    background: rgba(255, 255, 255, 0.15);
+  /*border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;*/ 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+    backdrop-filter: blur(15px); 
+}
+.curtain-content {
+    position: relative;
+    top: 30%; 
+    width: 100%;
+    text-align: center;    
+    /*text-shadow: -1.5px 0 1.5px white, 0 1.5px 1.5px white, 1.5px 0 1.5px white, 0 -1.5px 20px white;*/
+}
+.curtain-content i {
+    margin-right: 15px;
+}
+.curtain a {
+    padding: 8px;
+    text-decoration: none;
+     font-size: 2.25em;
+    color: transparent;
+   text-shadow: 0 0 2px #fff;
+    display: block; 
+    transition: 0.3s; 
+}
+.curtain a:hover, .curtain a:focus {
+    color: black; 
+    text-shadow: -0.5px 0 0.5px black, 0 0.5px 0.5px black, 0.5px 0 0.5px black, 0 -0.5px 5px black;
+}
+.curtain .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+.fa-times {
+  font-weight: lighter;
+  font-size: 0.6em;
+}
+h1 {
+  font-family: 'Homenaje', sans-serif;
+  font-size: 12em;  
+  line-height: 0.85em;
+  margin: auto;
+  font-style: italic;  
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: transparent;
+  text-shadow: -4px 0 #000, 0 4px #000, 4px 0 #000, 0 -4px #000; 
+  
+animation: neonsix 1.5s ease-in-out infinite;
+    -webkit-animation: neonsix 1.5s ease-in-out infinite;
+     -moz-animation: neonsix 1.5s ease-in-out infinite;
+} 
+@-webkit-keyframes neonsix {
+  from {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px #ff8c00, 0 0 50px #ff8c00, 0 0 80px #ff8c00;
+    opacity: 1;
+  }
+  to {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px #ff8c00, 0 0 25px #ff8c00, 0 0 40px #ff8c00;
+    opacity: 0.7;
+  }
+}
+/* animation: textanim 4s infinite alternate;*/
+ 
+/*@keyframes textanim {
+  0%, 20% { text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; }
+  21%, 40% { text-shadow: -1.5px 0 #000, 0 1.5px #000, 1.5px 0 #000, 0 -1.5px #000; }
+  41%,60% { text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000; }
+  61%,80% { text-shadow: -3px 0 #000, 0 3px #000, 3px 0 #000, 0 -3px #000; }
+  81%,100% { text-shadow: -4px 0 #000, 0 4px #000, 4px 0 #000, 0 -4px #000; }
+  
+/*-----------------------------BLOCS IMG---------------------------------*/
+
+section {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 90vh; 
+  max-width: 100vw;
+  overflow-x: hidden;   
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; 
+}
+#section1 {	
+    background-image: url("../img/land/08blur.jpg"); /* background de la section suivante*/
+
+}
+#section2 {	
+    background-image: url("../img/land/06blur.jpg");   
+}
+#section3 {	
+    background-image: url("../img/land/04blur.jpg");   
+}
+#section4 {	
+    background-image: url("../img/land/09blur.jpg");   
+}
+#section5 {	
+    background-image: url("../img/land/11blur.jpg");   
+}
+#section6 {	
+    background-image: url("../img/land/02blur.jpg");   
+}
+
+#section6 .blocimg {
+  transform: rotate(2deg);
+  -ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+  width: 460px;
+}
+#section5 .blocimgleft {
+  transform: rotate(355deg);
+  -ms-transform: rotate(355deg); /* IE 9 */
+    -webkit-transform: rotate(355deg); /* Chrome, Safari, Opera */
+  width: 515px;
+}
+#section5 .blocimg { 
+  width: 650px;
+}
+#section4 .blocimgleft {
+  transform: rotate(356deg);
+  -ms-transform: rotate(356deg); /* IE 9 */
+    -webkit-transform: rotate(356deg); /* Chrome, Safari, Opera */
+  width: 615px;
+}
+#section4 .blocimg, #section6 .blocimg {
+  transform: rotate(1.5deg);
+  -ms-transform: rotate(1.5deg); /* IE 9 */
+    -webkit-transform: rotate(1.5deg); /* Chrome, Safari, Opera */
+  width: 525px;
+}
+#section3 .blocimg {
+  width: 640px;
+  transform: rotate(2.5deg);
+  -ms-transform: rotate(2.5deg); /* IE 9 */
+    -webkit-transform: rotate(2.5deg); /* Chrome, Safari, Opera */
+}
+#section2 .blocimgleft {
+  width: 615px;
+  transform: rotate(357deg);
+  -ms-transform: rotate(357deg); /* IE 9 */
+    -webkit-transform: rotate(357deg); /* Chrome, Safari, Opera */
+}
+#section1 .blocimg {
+  width: 500px;
+  transform: rotate(1deg);
+  -ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+}
+#section2 .blocimg {
+  width: 575px;  
+}
+
+.blocimg, .blocimgleft {
+  width: 500px;
+  text-align: center;  
+  margin: auto;
+
+
+}
+.bloclink {
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+  opacity: 0.99;
+  overflow: hidden;
+  position: relative;
+
+  
+   box-shadow: 2px 2px 5px 10px rgba(0, 0, 0, .6);
+}
+.bloclink:before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+  backdrop-filter: blur(15px);
+ /*border-top: 3px solid rgba(255, 255, 255, 0.8);*/
+  box-shadow: 0px -5px 10px 1px rgba(0, 0, 0, .7);
+
+}
+.bloclink img {
+  display: block;
+  max-width: 100%;
+  backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.desc {
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+   text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+
+
+}
+.desc span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+}
+.title {
+  font-size: 1.5em;
+}
+.info {
+  font-size: 1em;
+  margin-top: 5px;
+}
+.bloclink:focus:before,
+.bloclink:focus span, .bloclink:hover:before,
+.bloclink:hover span {
+  opacity: 1;
+}
+.bloclink:focus:before, .bloclink:hover:before {
+  top: 75%;
+}
+.bloclink:focus span, .bloclink:hover span {
+  top: 0;
+}
+.bloclink:focus .title, .bloclink:hover .title {
+  transition-delay: 0.15s;
+}
+.bloclink:focus .info, .bloclink:hover .info {
+  transition-delay: 0.25s;
+}
+figure {    
+   width: 100%;
+  margin: 0;   
+  height: 230px;    
+  position: relative; 
+}
+figcaption {
+  opacity: 0.15;
+  background: #f4eb7b;
+  position: absolute;
+  display: block;
+  float: left;  
+  border: 2px solid black;  
+  border-radius: 97% 1% 97% 1%/1% 97% 1% 97%;
+  box-shadow: 1px 2px 5px 5px rgba(0, 0, 0, .7);  
+}
+.figcaption1 { 
+  top: -15%;  
+  left: 25%;  
+  width: 540px;
+  height: 50px;  
+  transform: rotate(2deg);
+    -ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+}
+.figcaption2 {
+  top: -17%;  
+  right: 15%;  
+  width: 400px;
+  height: 50px;  
+  transform: rotate(357deg);
+    -ms-transform: rotate(357deg); /* IE 9 */
+    -webkit-transform: rotate(357deg); /* Chrome, Safari, Opera */
+    
+}
+.figcaption3 { 
+  top: 3%;  
+  left: 8%;  
+  width: 455px;
+  height: 50px;  
+  transform: rotate(0.5deg);
+    -ms-transform: rotate(0.5deg); /* IE 9 */
+    -webkit-transform: rotate(0.5deg); /* Chrome, Safari, Opera */
+}
+
+figure img {  
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  padding: 0px 0 0 0;
+  background: url("../img/land/filmland.png");
+  position: absolute;
+  top: 20%;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, .6); 
+  animation: putmeinamovie 30s linear infinite;  
+
+}
+@keyframes putmeinamovie {
+  0%  {background-position: 0 0;} 
+  100%  {background-position: -2122px 0;}
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------NAV FOOTER-------------------------*/
+.to-top {
+	position: fixed;
+	bottom: 50px;
+	right: 10px;
+	font-size: 1.25em;
+	color: transparent;
+   text-shadow: 0 0 10px #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.4s;
+	margin-right: 10px;
+}
+.to-top.active {
+	bottom: 50px;
+	pointer-events: auto;
+	opacity: 0.9;
+}
+.to-top i {
+
+}
