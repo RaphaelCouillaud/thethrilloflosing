@@ -335,3 +335,22 @@ h1 span:nth-child(4) {
   transition-delay: 0s;
  
 }
+
+@media screen and (max-width: 768px)
+  {
+h1 {
+  font-size: 7em;
+  margin-left: 100px;
+ }
+}
+@media screen and (max-width: 450px)
+  {
+h1 {
+  font-size: 5em;
+  margin-left: 50px;
+ }
+ .curtain-content p {
+  display: none;
+  
+}
+}

@@ -537,4 +537,8 @@ h1 span:nth-child(8n)
     position: relative;
     top: -16px;
 }
+.curtain-content p {
+  display: none;
+  
+}
 }

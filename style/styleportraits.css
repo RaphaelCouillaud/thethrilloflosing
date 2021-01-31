@@ -348,20 +348,6 @@ figure img {
   100%  {background-position: -2122px 0;}
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------------------------------NAV FOOTER-------------------------*/
 .to-top {
 	position: fixed;
@@ -385,4 +371,289 @@ figure img {
 }
 .to-top i {
 
+}
+
+/*-----------------------------MEDIA QUERIES---------------------------------*/
+
+@media (min-width: 1920px) and (max-width: 2560px)
+  {
+ .blocimg, .blocimgleft {
+   width: 700px;
+}
+#section4 .blocimgleft { 
+  width: 705px;
+}
+#section4 .blocimg { 
+  width: 755px;
+}
+#section3 .blocimg {
+  width: 750px;
+}
+#section2 .blocimgleft {
+   width: 720px;
+}
+#section2 .blocimg {
+  width: 600px;
+}
+#section1 .blocimg {
+  width: 750px;
+}
+#section1 .blocimgleft {
+  width: 620px;
+}
+#section3 .blocimgleft {
+ width: 700px;
+}
+#section5 .blocimg { 
+  width: 800px;
+}
+#section5 .blocimgleft { 
+  width: 700px;
+}
+#section6 .blocimg { 
+  width: 750px;
+}
+#section6 .blocimgleft { 
+  width: 725px;
+}
+#section7 .blocimg { 
+  width: 750px;
+}
+#section7 .blocimgleft { 
+  width: 725px;
+}
+}
+
+@media screen and (max-width: 1024px)
+  {
+h1 {  
+  font-size: 9em; 
+} 
+figure {     
+  height: 180px; 
+}
+figure img {    
+  background-size: cover;
+}
+.blocimg, .blocimgleft {
+   width: 400px;
+}
+#section4 .blocimgleft { 
+  width: 455px;
+}
+#section4 .blocimg { 
+  width: 385px;
+}
+#section3 .blocimg {
+  width: 350px;
+}
+#section2 .blocimgleft {
+   width: 420px;
+}
+#section2 .blocimg {
+  width: 375px;
+}
+#section1 .blocimg {
+  width: 410px;
+}
+#section1 .blocimgleft {
+  width: 400px;
+}
+#section3 .blocimgleft {
+  width: 405px;
+}
+#section5 .blocimg { 
+  width: 450px;
+}
+#section5 .blocimgleft { 
+  width: 400px;
+}
+#section6 .blocimg { 
+  width: 450px;
+}
+#section6 .blocimgleft { 
+  width: 420px;
+}
+#section7 .blocimg { 
+  width: 420px;
+}
+#section7 .blocimgleft { 
+  width: 450px;
+}
+}
+@media screen and (max-width: 768px)
+  {
+#chevron {    
+    margin-left: 20px;
+    margin-top: 20px;
+}
+h1 {  
+  font-size: 7em; 
+} 
+figure {     
+  height: 150px; 
+}
+figure img {    
+  background-size: cover;
+}
+.blocimg, .blocimgleft {
+   width: 280px;
+}
+#section4 .blocimgleft { 
+  width: 355px;
+}
+#section4 .blocimg { 
+  width: 315px;
+}
+#section3 .blocimg {
+  width: 250px;
+}
+#section2 .blocimgleft {
+   width: 350px;
+}
+#section2 .blocimg {
+  width: 320px;
+}
+#section1 .blocimg {
+  width: 350px;
+   margin-top: 150px;
+}
+#section1 .blocimgleft {
+  width: 300px;
+}
+#section3 .blocimgleft {
+  width: 325px;
+}
+#section3 .blocimg {
+  width: 325px;
+}
+
+#section5 .blocimg { 
+  width: 340px;
+}
+#section5 .blocimgleft { 
+  width: 320px;
+}
+#section6 .blocimg { 
+  width: 350px;
+}
+#section6 .blocimgleft { 
+  width: 330px;
+}
+
+#section7 .blocimgleft { 
+  width: 350px;
+}
+#section7 .blocimg { 
+  width: 375px;
+}
+
+.figcaption1 { 
+  top: 0%;
+  width: 175px;
+  height: 35px;  
+}
+.desc {
+  display: flex;
+  flex-direction: row;
+}
+.info {
+   margin-left: 8px;
+   font-size: 0.85em;
+}
+.title {
+  font-size: 1.25em;
+  margin-top: 0px;
+}
+}
+@media screen and (max-width: 450px)
+  {
+#chevron {    
+    margin-top: 10px;
+    margin-left: -15px;
+}
+.fa-chevron-up {
+   font-size: 1em;
+   margin-left: -5px;   
+   color: transparent;
+   text-shadow: 0 0 2px #fff;
+}
+#chevron2 {
+    position: relative;
+    top: -8px;
+}
+#chevron3 {
+    position: relative;
+    top: -16px;
+}
+h1 {  
+  font-size: 4.75em; 
+} 
+figure {     
+  height: 100px; 
+}
+figure img {    
+  background-size: cover;
+  animation: putmeinamovie 50s linear infinite;  
+
+}
+.blocimg, .blocimgleft {
+   width: 250px;
+}
+#section4 .blocimgleft { 
+  width: 300px;
+}
+#section4 .blocimg { 
+  width: 300px;
+}
+#section3 .blocimg {
+  width: 250px;
+}
+#section2 .blocimgleft {
+   width: 250px;
+  
+}
+#section2 .blocimg {
+  width: 270px;
+}
+#section1 .blocimg {
+  width: 315px;
+   margin-top: 0px;
+  
+}
+#section1 .blocimgleft {
+  width: 270px;
+   margin-top: 50px;
+ 
+}
+#section3 .blocimgleft {
+  width: 275px;
+}
+#section3 .blocimg {
+  width: 305px;
+}
+
+#section5 .blocimg { 
+  width: 315px;
+}
+#section5 .blocimgleft { 
+  width: 305px;
+}
+#section6 .blocimg { 
+  width: 315px;
+}
+#section6 .blocimgleft { 
+  width: 315px;
+}
+
+#section7 .blocimgleft { 
+  width: 310px;
+}
+#section7 .blocimg { 
+  width: 310px;
+}
+.curtain-content p {
+  display: none;
+  
+}
 }

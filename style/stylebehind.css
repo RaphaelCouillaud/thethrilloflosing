@@ -582,4 +582,8 @@ figure img {
   width: 255px;
   height: 35px;  
 }
+.curtain-content p {
+  display: none;
+  
+}
 }
