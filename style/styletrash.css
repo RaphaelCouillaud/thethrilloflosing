@@ -190,23 +190,23 @@ section {
      margin-top: 115px
 }
 #section1 .blocimgleft {
- 
      margin-top: 115px
     
 }
 #section3 .blocimgleft {
- 
      width: 625px;
-    
 }
-
-
 .blocimg, .blocimgleft {
   width: 500px;
   text-align: center;  
   margin: auto;
-
-
+}
+.blocimg a, .blocimgleft a {
+ pointer-events: auto;
+  cursor: default;
+}
+.blocimg a:active, .blocimgleft a:active {
+ pointer-events: none;
 }
 .bloclink {
   display: inline-block;
@@ -562,10 +562,7 @@ figure img {
 #section3 .blocimgleft {
   width: 315px;  
 }
-.curtain-content p {
+.curtain-content span {
   display: none;
-  
 }
-
-
 }

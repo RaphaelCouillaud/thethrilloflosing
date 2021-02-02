@@ -206,8 +206,13 @@ section {
   width: 500px;
   text-align: center;  
   margin: auto;
-
-
+}
+.blocimg a, .blocimgleft a {
+ pointer-events: auto;
+  cursor: default;
+}
+.blocimg a:active, .blocimgleft a:active {
+ pointer-events: none;
 }
 .bloclink {
   display: inline-block;
@@ -596,10 +601,10 @@ figure img {
    width: 250px;
 }
 #section4 .blocimgleft { 
-  width: 310px;
+  width: 320px;
 }
 #section4 .blocimg { 
-  width: 310px;
+  width: 320px;
 }
 #section3 .blocimg {
   width: 250px;
@@ -627,7 +632,7 @@ figure img {
   width: 275px;
 }
 #section3 .blocimg {
-  width: 305px;
+  width: 340px;
 }
 
 #section5 .blocimg { 
@@ -649,8 +654,7 @@ figure img {
 #section8 .blocimgleft { 
   width: 310px;
 }
-.curtain-content p {
+.curtain-content span {
   display: none;
-  
 }
 }

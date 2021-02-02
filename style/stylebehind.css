@@ -127,6 +127,7 @@ section {
 #section1 {	
   background-image: url("../img/behind/05blur.jpg"); /* background de la section suivante*/
 
+
 }
 #section2 {	
   background-image: url("../img/behind/03blur.jpg");   
@@ -134,6 +135,9 @@ section {
 }
 #section3 {	
   background-image: url("../img/behind/09blur.jpg");   
+
+
+
 }
 #section4 {	
   background-image: url("../img/behind/04blur.jpg");   
@@ -196,9 +200,15 @@ section {
   width: 500px;
   text-align: center;  
   margin: auto;
-
-
 }
+.blocimg a, .blocimgleft a {
+ pointer-events: auto;
+	cursor: default;
+}
+.blocimg a:active, .blocimgleft a:active {
+ pointer-events: none;
+}
+
 .bloclink {
   display: inline-block;
   margin: 10px;
@@ -548,29 +558,29 @@ figure img {
    width: 250px;
 }
 #section4 .blocimgleft { 
-  width: 250px;
+  width: 300px;
 }
 #section4 .blocimg { 
-  width: 250px;
+  width: 275px;
 }
 #section3 .blocimg {
-  width: 250px;
-  margin-top: 50px;
+  width: 295px;
+  margin-top: 0px;
 }
 #section2 .blocimgleft {
-   width: 250px;
+   width: 270px;
 }
 #section2 .blocimg {
-  width: 310px;
+  width: 320px;
 }
 #section1 .blocimg {
-  width: 250px;
+  width: 280px;
 }
 #section1 .blocimgleft {
-  width: 250px;
+  width: 280px;
 }
 #section3 .blocimgleft {
-  width: 250px;
+  width: 300px;
   margin-top: 50px;
 }
 
@@ -582,8 +592,7 @@ figure img {
   width: 255px;
   height: 35px;  
 }
-.curtain-content p {
+.curtain-content span {
   display: none;
-  
 }
 }

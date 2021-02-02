@@ -10,40 +10,12 @@ body {
     min-height: 100vh; 
     width: 100vw;
     overflow-x: hidden;
-    background-image: url("../img/05.jpg");
+    background-image: url("../img/lmc.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
-    animation: flicker 8s infinite alternate;
+    background-position: top center;    
 }
-
-@keyframes flicker {
-  0%, 31% { background-image: url("../img/05.jpg"); }
-  32%,32.5% { background-image: url("../img/05night.jpg"); }
-  32.5%,33% { background-image: url("../img/05.jpg"); }
-  33%,33.5% { background-image: url("../img/05night.jpg"); }
-  33.5%,34% { background-image: url("../img/05.jpg"); }
-  34%,34.5% { background-image: url("../img/05night.jpg"); }
-  34.5%,35% { background-image: url("../img/05.jpg"); }
-  35.5%,36% { background-image: url("../img/05night.jpg"); }
-  36.5%,52% { background-image: url("../img/05night.jpg"); }
-  76%,76.5% { background-image: url("../img/05.jpg"); }
-  76.5%,77% { background-image: url("../img/05night.jpg"); }
-  77%,77.5% { background-image: url("../img/05.jpg"); }
-  77.5%,78% { background-image: url("../img/05night.jpg"); }
-  78.5%,100% { background-image: url("../img/05.jpg"); }
-  
-}
-
-
-
-
-
-
-
-
-
 a {
     cursor: pointer;
 }
@@ -123,102 +95,91 @@ h1 {
   font-family: 'Homenaje', sans-serif;
   font-size: 9em;
   color: white;
-  line-height: 0.85em;
-  animation: flick 8s infinite alternate;
+  line-height: 0.85em;  
   top: 50%;
   bottom: 50%;
   margin-left: 325px;
-  opacity: 0;
+  opacity: 1;
    text-shadow: -4px 0 #000, 0 4px #000, 4px 0 #000, 0 -4px #000; 
 
-  /*background: linear-gradient(to right, #30CFD0 0%, #330867 10%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;*/
-}
-@keyframes flick {
-  
-   
-  0%, 31% { opacity: 0.8; }
-  32%,32.5% { opacity: 0.1; }
-  32.5%,33% { opacity: 0.8; }
-  33%,33.5% { opacity: 0.1; }
-  33.5%,34% { opacity: 0.8; }
-  34%,34.5% { opacity: 0.1; }
-  34.5%,35% { opacity: 0.8; }
-  35.5%,36% { opacity: 0.1; }
-  36.5%,52% { opacity: 0.1; }
-  76%,76.5% { opacity: 0.8; }
-  76.5%,77% { opacity: 0.1; }
-  77%,77.5% { opacity: 0.8; }
-  77.5%,78% { opacity: 0.1; }
-  78.5%,100% { opacity: 0.8; } 
 }
 
-h1 span:nth-child(2) {
-	margin-left: 40px;
-}
-h1 span:nth-child(3) {
-	margin-left: 80px;
-}
-h1 span:nth-child(4) {
-	margin-left: 120px;
-}
-/*-----------------------------LIGHT---------------------------------*/
 
 
-/*.container{
-  position: relative;
-  margin: 0 auto;
-  
-  position: fixed; 
- top: 0; 
- left: 0; 
- 
- min-height: 100%;
- min-width: 1280px;
- width: 100%;
- height: auto;
+/*-------------------------------------SECTION MINDcard-----------------------------------*/
+.workco {  
+   width: 80%;
+  display: flex;
+  margin: auto;  
+    text-align: left;
+    height: 500px;
+    margin: auto; 
+    transform: translateY(-50%); 
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
 }
-  
-.dark{
+/* card fronts and backs */
+.cardfront, .cardback {
   position: absolute;
-  top: 0px;
-  left: 50px;
-  
+  top: 60%;
+  bottom: 100%
+  left: 0%;
+  width: 100%;
+  height: 100%;
+    -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+  border-radius: 25px;  
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+   /*text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);*/
+   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+   color: white;
+}
+.cardfront {
+ background: transparent;
+ display: flex;
+ border: none;
+
+}
+.cardback {
+  backdrop-filter: blur(15px);  
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+  display: flex; 
+}
+.cardback p {
+  font-size: 1.25em;
+  margin: auto;
+}
+/* card text */
+.cardtext {
+  display: flex;  
+  font-size: 5em;
+  text-align: center;  
+  margin: auto; 
+}
+.cardfront p {
+  position: absolute;  
+  bottom: 0;
+  right: 0; 
 }
 
-.light{
-  position: absolute;
-  top: 0px;
-  left: 50px;
- 
-  z-index: 1;
-  opacity: 0.0;
-  animation-delay: 0.5s;
-  animation-duration: 3s;
-  animation-direction: normal;
-  animation-iteration-count: infinite;
-  animation-name: flicker;
-  animation-timing-function: ease-in-out;
+
+
+/* hover effect */
+.workco:hover .cardfront {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+.workco:hover .cardback {
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
 }
 
-@keyframes flicker {
-  0%, 10% { opacity: 0; }
-  15%,20% { opacity: 0.15; }
-  22%,23% { opacity: 0.83; }
-  25%,35% { opacity: 0.08; }
-  39%,42% { opacity: 0.92; }
-  44%,47% { opacity: 0.02; }
-  49%,50% { opacity: 1; }
-  52%,54% { opacity: 0.8; }
-  57%,58% { opacity: 0.74; }
-  60%,63% { opacity: 0.17; }
-  65%,72% { opacity: 0.08; }
-  77%,85% { opacity: 0.36; }
-  90%,95% { opacity: 0.85; }
-  100% { opacity: 0; }
-}
-*/
+
 /*-----------------------------LINKS---------------------------------*/
 
 #niveau1 {

@@ -243,8 +243,13 @@ section {
   width: 500px;
   text-align: center;  
   margin: auto;
-
-
+}
+.blocimg a, .blocimgleft a {
+ pointer-events: auto;
+  cursor: default;
+}
+.blocimg a:active, .blocimgleft a:active {
+ pointer-events: none;
 }
 .bloclink {
   display: inline-block;
@@ -709,8 +714,7 @@ figure img {
 #section8 .blocimg { 
   width: 300px;
 }
-.curtain-content p {
+.curtain-content span {
   display: none;
-  
 }
 }
