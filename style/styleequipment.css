@@ -10,7 +10,7 @@ body {
     min-height: 100vh; 
     width: 100vw;
     overflow-x: hidden;
-    background-image: url("../img/lmc.jpg");
+    background-image: url("../img/yashica.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@ section {
  /*background: transparent;*/
  display: flex;
  border: none;
- background: rgba(250, 150, 250, 0.2);
+  background: rgba(200, 100, 0, 0.2);
  
 }
 .cardback {
@@ -153,6 +153,8 @@ section {
   -webkit-transform: rotateX(-180deg);
           transform: rotateX(-180deg);
   display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
   background: rgba(255, 255, 255, 0.2);
 }
 .cardback p, .cardback2 p {
@@ -165,6 +167,10 @@ section {
 .cardtext { 
   text-align: center;  
   margin: auto; 
+  
+  
+  width: 90%;
+  
 }
 
 /* hover effect */
@@ -198,7 +204,8 @@ section {
  /*background: transparent;*/
  display: flex;
  border: none;
- background: rgba(200, 100, 0, 0.2);
+ background: rgba(250, 150, 250, 0.2);
+
  
 }
 .cardback2 {
@@ -217,15 +224,7 @@ section {
   -webkit-transform: rotateX(0);
           transform: rotateX(0);
 }
-article {
-  position: absolute;  
-  bottom: 0;
-  right: 0; 
-  color: transparent;
-   text-shadow: 0 0 1px #fff;
-  margin-right: 5px;
-  font-size: 0.9em;
-}
+
 /*-----------------------------LINKS---------------------------------*/
 
 /*#niveau1 {
