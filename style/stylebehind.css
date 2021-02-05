@@ -221,8 +221,6 @@ section {
   opacity: 0.99;
   overflow: hidden;
   position: relative;
-  
-  
    box-shadow: 2px 2px 5px 10px rgba(0, 0, 0, .6);
 }
 .bloclink:before {
@@ -236,7 +234,13 @@ section {
   left: 0;
   z-index: 2;
   transition-property: top, opacity;
+  	-webkit-transition: top, opacity;
+    -moz-transition: top, opacity;
+    -o-transition: top, opacity;
   transition-duration: 0.3s;
+  	-webkit-transition-duration: 0.3s;
+  	-moz-transition-duration: 0.3s;
+  	-o-transition-duration: 0.3s;
   backdrop-filter: blur(15px);
   /*border-top: 3px solid rgba(255, 255, 255, 0.8);*/
   box-shadow: 0px -5px 10px 1px rgba(0, 0, 0, .7);
@@ -265,7 +269,13 @@ section {
   position: relative;
   top: 100px;
   transition-property: top, opacity;
+  	-webkit-transition: top, opacity;
+    -moz-transition: top, opacity;
+    -o-transition: top, opacity;
   transition-duration: 0.3s;
+  	-webkit-transition-duration: 0.3s;
+  	-moz-transition-duration: 0.3s;
+  	-o-transition-duration: 0.3s;
   transition-delay: 0s;
 }
 .title {
@@ -288,9 +298,15 @@ section {
 }
 .bloclink:focus .title, .bloclink:hover .title {
   transition-delay: 0.15s;
+  	-webkit-transition-delay: 0.15s;
+  	-moz-transition-delay: 0.15s;
+  	-o-transition-delay: 0.15s;
 }
 .bloclink:focus .info, .bloclink:hover .info {
   transition-delay: 0.25s;
+  	-webkit-transition-delay: 0.25s;
+  	-moz-transition-delay: 0.25s;
+  	-o-transition-delay: 0.25s;
 }
 figure {    
   width: 100%;
@@ -509,7 +525,6 @@ figure {
 }
 figure img {    
   background-size: cover;
-  background: url("../img/behind/filmbehind2.png");  
 }
 .blocimg, .blocimgleft {
    width: 280px;
