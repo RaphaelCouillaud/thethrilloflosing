@@ -16,6 +16,17 @@ body {
     background-repeat: no-repeat;
     background-position: top center;    
 }
+/*-----------------------------H1 SMOKE---------------------------------*/
+
+  h1 {
+  font-family: 'Homenaje', sans-serif;
+  font-size: 2.4em;  
+  line-height: 0.6em;
+  margin: auto;
+  text-align: center;
+  color: transparent;
+   text-shadow: 0 0 2px #fff;
+}
 a {
     cursor: pointer;
 }
@@ -91,7 +102,7 @@ a {
   font-weight: lighter;
   font-size: 0.6em;
 }
-h1, h2 {
+h2 {
   font-family: 'Homenaje', sans-serif;
   font-size: 5em;  
   line-height: 0.6em;
@@ -344,7 +355,13 @@ article {
 }
 */
 
-
+/*-----------------------------MEDIA QUERIES---------------------------------*/
+@media (min-width: 1920px) and (max-width: 2560px)
+  {
+ h1 {  
+  font-size: 2.75em;    
+}
+}
 
 @media screen and (max-width: 1024px) 
 {
@@ -359,11 +376,13 @@ article {
   top: 70%;  
   right: 25%;   
 }
-.cardfront
+ h1 {  
+  font-size: 2em;    
+}
 }
 @media screen and (max-width: 768px)
   {
-h1, h2 {
+h2 {
   font-size: 3.5em;   
  }
  .workco {   
@@ -379,7 +398,10 @@ h1, h2 {
 }
 @media screen and (max-width: 450px)
   {
-h1,h2 {
+    h1 {  
+  font-size: 1.5em;    
+}
+h2 {
   font-size: 3.5em;  
  }
  .workco {   

@@ -16,6 +16,17 @@ body {
     background-repeat: no-repeat;
     background-position: top center;    
 }
+/*-----------------------------H1 SMOKE---------------------------------*/
+
+  h1 {
+  font-family: 'Homenaje', sans-serif;
+  font-size: 2.4em;  
+  line-height: 0.6em;
+  margin: auto;
+  text-align: center;
+  color: transparent;
+   text-shadow: 0 0 2px #fff;
+}
 a {
     cursor: pointer;
 }
@@ -91,7 +102,7 @@ a {
   font-weight: lighter;
   font-size: 0.6em;
 }
-h1, h2 {
+h2 {
   font-family: 'Homenaje', sans-serif;
   font-size: 5em;  
   line-height: 0.6em;
@@ -227,125 +238,15 @@ section {
           transform: rotateX(0);
 }
 
-/*-----------------------------LINKS---------------------------------*/
-
-/*#niveau1 {
-  position: relative;
-}
-.menu-button {
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  transition: 0.4s;
-  
-
-  margin: auto;  
-  text-align: center;  
-  color: white;
-  font-size: 3em;  
-  cursor: pointer;
-  
-  text-align: right;
-
-}
-.menu-button:hover {  
-  color: black;
-}
-.menu-button p {
-  margin-right: 50px;
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-}
-.menu-button img {
-  width: 120px;
-  height: auto;
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-  margin-right: 50px;
-}
-.menu-button a {
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  transition: 0.4s;
-  opacity: 0;
-  width: 0px;
-  height: 0px;
-  text-align: center;  
-  cursor: pointer;
-}
-.menu-button a:hover {
-  text-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
-
-}
-.menu-button a:nth-child(2) {
-  -webkit-transition-delay: 0.3s;
-  -moz-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  
-}
-.menu-button a:nth-child(3) {
-  -webkit-transition-delay: 0.4s;
-  -moz-transition-delay: 0.4s;
-  transition-delay: 0.4s;
-  position: absolute;
-  right: 0px;
-  top: 0px;
- 
-}
-.menu-button a:nth-child(4) {
-  -webkit-transition-delay: 0.5s;
-  -moz-transition-delay: 0.5s;
-  transition-delay: 0.5s;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  
-}
-.menu-button:hover a {
-  opacity: 1;
-  width: 100px;
-  height: 100px;
-}
-.menu-button:hover a:nth-child(2) {
-  top: -250px;
-  right: 30px;
- 
-}
-.menu-button:hover a:nth-child(2):hover {
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay: 0s;
-  transition-delay: 0s;
-
-}
-.menu-button:hover a:nth-child(3) {
- top: -200px;
-  right: 30px;
-
-  
-}
-.menu-button:hover a:nth-child(3):hover {
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay: 0s;
-  transition-delay: 0s;
- 
-}
-.menu-button:hover a:nth-child(4) {
-  right: 0%;
-  top: -155px;
-}
-.menu-button:hover a:nth-child(4):hover {
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay: 0s;
-  transition-delay: 0s;
- 
-}
-*/
 
 
+/*-----------------------------MEDIA QUERIES---------------------------------*/
+@media (min-width: 1920px) and (max-width: 2560px)
+  {
+ h1 {  
+  font-size: 2.75em;    
+}
+}
 
 @media screen and (max-width: 1024px) 
 {
@@ -360,11 +261,13 @@ section {
   top: 70%;  
   right: 25%;   
 }
-.cardfront
+ h1 {  
+  font-size: 2em;    
+}
 }
 @media screen and (max-width: 768px)
   {
-h1, h2 {
+h2 {
   font-size: 3.5em;   
  }
  .workco {   
@@ -380,7 +283,10 @@ h1, h2 {
 }
 @media screen and (max-width: 450px)
   {
-h1,h2 {
+       h1 {  
+  font-size: 1.5em;    
+}
+h2 {
   font-size: 3.5em;  
  }
  .workco {   

@@ -4,9 +4,19 @@ body {
    font-family: 'Homenaje', sans-serif;
     margin: 0; 
     padding: 0;
-    background: linear-gradient(#000000, #30fcfc 15%);
+    background: linear-gradient(#000000, #08446c 15%);
 }
+/*-----------------------------H1 SMOKE---------------------------------*/
 
+  h1 {
+  font-family: 'Homenaje', sans-serif;
+  font-size: 2.4em;  
+  line-height: 0.6em;
+  margin: auto;
+  text-align: center;
+  color: transparent;
+   text-shadow: 0 0 2px #fff;
+}
 a {
     cursor: pointer;
     text-decoration: none;
@@ -83,7 +93,7 @@ a {
   font-weight: lighter;
   font-size: 0.6em;
 }
-h1 {
+h2 {
   font-family: 'Homenaje', sans-serif;
   font-size: 12em;  
   line-height: 0.85em;
@@ -101,11 +111,11 @@ animation: neonsix 1.5s ease-in-out infinite;
 } 
 @-webkit-keyframes neonsix {
   from {
-    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px #30fcfc, 0 0 50px #30fcfc, 0 0 80px #30fcfc;
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px #08446c, 0 0 50px #08446c, 0 0 80px #08446c;
     opacity: 1;
   }
   to {
-    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px #30fcfc, 0 0 25px #30fcfc, 0 0 40px #30fcfc;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px #08446c, 0 0 25px #08446c, 0 0 40px #08446c;
     opacity: 0.7;
   }
 }
@@ -420,6 +430,9 @@ figure img {
 
 @media (min-width: 1920px) and (max-width: 2560px)
   {
+    h1 {  
+  font-size: 2.75em;    
+}
  .blocimg, .blocimgleft {
    width: 700px;
 }
@@ -475,7 +488,10 @@ figure img {
 
 @media screen and (max-width: 1024px)
   {
-h1 {  
+    h1 {  
+  font-size: 2em;    
+}
+h2 {  
   font-size: 9em; 
 } 
 figure {     
@@ -542,7 +558,7 @@ figure img {
     margin-left: 20px;
     margin-top: 20px;
 }
-h1 {  
+h2 {  
   font-size: 7em; 
 } 
 figure {     
@@ -629,6 +645,9 @@ figure img {
 }
 @media screen and (max-width: 450px)
   {
+       h1 {  
+  font-size: 1.5em;    
+}
 #chevron {    
     margin-top: 10px;
     margin-left: -15px;
@@ -647,7 +666,7 @@ figure img {
     position: relative;
     top: -16px;
 }
-h1 {  
+h2 {  
   font-size: 4.75em; 
 } 
 figure {     

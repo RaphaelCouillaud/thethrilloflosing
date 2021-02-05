@@ -10,12 +10,44 @@ body {
     min-height: 100vh; 
     width: 100vw;
     overflow-x: hidden;
-    background-image: url("../img/behind/10.jpg");
+    background-image: url("../img/05.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;    
+    background-position: top center;
+    animation: flicker 8s infinite alternate;
 }
+
+@keyframes flicker {
+  0%, 31% { background-image: url("../img/05.jpg"); }
+  32%,32.5% { background-image: url("../img/05night.jpg"); }
+  32.5%,33% { background-image: url("../img/05.jpg"); }
+  33%,33.5% { background-image: url("../img/05night.jpg"); }
+  33.5%,34% { background-image: url("../img/05.jpg"); }
+  34%,34.5% { background-image: url("../img/05night.jpg"); }
+  34.5%,35% { background-image: url("../img/05.jpg"); }
+  35.5%,36% { background-image: url("../img/05night.jpg"); }
+  36.5%,52% { background-image: url("../img/05night.jpg"); }
+  76%,76.5% { background-image: url("../img/05.jpg"); }
+  76.5%,77% { background-image: url("../img/05night.jpg"); }
+  77%,77.5% { background-image: url("../img/05.jpg"); }
+  77.5%,78% { background-image: url("../img/05night.jpg"); }
+  78.5%,100% { background-image: url("../img/05.jpg"); }
+  
+}
+/*-----------------------------H1 SMOKE---------------------------------*/
+
+  h1 {
+  font-family: 'Homenaje', sans-serif;
+  font-size: 2.4em;  
+  line-height: 0.6em;
+  margin: auto;
+  text-align: center;
+  color: transparent;
+   text-shadow: 0 0 2px #fff;
+}
+
+
 a {
     cursor: pointer;
 }
@@ -91,7 +123,7 @@ a {
   font-weight: lighter;
   font-size: 0.6em;
 }
-h1, h2 {
+h2 {
   font-family: 'Homenaje', sans-serif;
   font-size: 5em;  
   line-height: 0.6em;
@@ -126,7 +158,7 @@ section {
 .cardfront, .cardback {
   position: absolute;
   top: 50%;  
-  left: 52%;  
+  left: 55%;  
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -145,7 +177,7 @@ section {
  /*background: transparent;*/
  display: flex;
  border: none;
- background: rgba(250, 150, 250, 0.2);
+ background: rgba(200, 100, 0, 0.2);
  
 }
 .cardback {
@@ -176,17 +208,21 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-shadow: 0 0 2px #fff; 
   
 }
 
 #formulaire button {
   text-decoration: none;
   color: black;
+ text-shadow: 0 0 2px #fff;
   cursor: pointer;  
-  font-size: 1.5em;   
+  font-size: 1.5em; 
+  font-weight: bolder;  
   transition: all 300ms ease-in-out;  
   margin-top: 20px; 
   margin-bottom: 50px; 
+  background-color: white;
 }
 .form-group {
   display: flex;
@@ -212,7 +248,7 @@ textarea {
   font-size: 1em;
 }
 input:focus, textarea:focus {
-  border-color: black;
+  border-color: rgba(200, 100, 0, 0.9);
   box-shadow: 0px 0px 20px rgba(200, 100, 0, 0.9);
 }
 
@@ -237,7 +273,7 @@ input:focus, textarea:focus {
 .cardfront2, .cardback2 {
    position: absolute;
   top: 70%;  
-  right: 52%;  
+  right: 55%;  
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -256,7 +292,7 @@ input:focus, textarea:focus {
  /*background: transparent;*/
  display: flex;
  border: none;
- background: rgba(200, 100, 0, 0.2);
+ background: rgba(250, 150, 250, 0.2);
  
 }
 .cardback2 {
@@ -278,40 +314,42 @@ input:focus, textarea:focus {
 
 /*-----------------------------LINKS---------------------------------*/
 
-/*#niveau1 {
+#niveau1 {
   position: relative;
+  margin: auto;
 }
 .menu-button {
+  position: relative;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   transition: 0.4s;
-  
-
-  margin: auto;  
+  display: flex; 
   text-align: center;  
   color: white;
-  font-size: 3em;  
-  cursor: pointer;
-  
-  text-align: right;
-
+   text-shadow: 0 0 2px #fff;   
+  cursor: pointer;  
+  text-align: center; 
+  width: 100%;
+  height: 500px;  
 }
 .menu-button:hover {  
-  color: black;
+  
+  opacity: 0.85;
 }
-.menu-button p {
-  margin-right: 50px;
-  position: absolute;
-  right: 0;
-  bottom: 50%;
+.menu-button h3 { 
+  font-size: 3em; 
+  margin: auto;
+}
+.fa-facebook-f, .fa-spotify, .fa-instagram { 
+  font-size: 3em; 
+}
+.menu-button span { 
+  font-size: 0.5em; 
 }
 .menu-button img {
-  width: 120px;
+  width: 100px;
   height: auto;
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-  margin-right: 50px;
+   
 }
 .menu-button a {
   -webkit-transition: 0.4s;
@@ -322,9 +360,10 @@ input:focus, textarea:focus {
   height: 0px;
   text-align: center;  
   cursor: pointer;
+  color: transparent;
 }
 .menu-button a:hover {
-  text-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.28), 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 
 }
 .menu-button a:nth-child(2) {
@@ -332,27 +371,32 @@ input:focus, textarea:focus {
   -moz-transition-delay: 0.3s;
   transition-delay: 0.3s;
   position: absolute;
-  right: 0px;
-  top: 0px;
-  
+  top: 50%;
+  right: 50%;
 }
 .menu-button a:nth-child(3) {
   -webkit-transition-delay: 0.4s;
   -moz-transition-delay: 0.4s;
   transition-delay: 0.4s;
   position: absolute;
-  right: 0px;
-  top: 0px;
- 
+  top: 50%;
+  right: 50%;
 }
 .menu-button a:nth-child(4) {
   -webkit-transition-delay: 0.5s;
   -moz-transition-delay: 0.5s;
   transition-delay: 0.5s;
   position: absolute;
-  right: 0px;
-  top: 0px;
-  
+  bottom: 50%;
+  right: 50%;
+}
+.menu-button a:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
 }
 .menu-button:hover a {
   opacity: 1;
@@ -360,41 +404,70 @@ input:focus, textarea:focus {
   height: 100px;
 }
 .menu-button:hover a:nth-child(2) {
-  top: -250px;
-  right: 30px;
- 
+  top: 2%;
+  left: -20%;
+
 }
+
 .menu-button:hover a:nth-child(2):hover {
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
   transition-delay: 0s;
+  transform: scale(1.15);
 
 }
 .menu-button:hover a:nth-child(3) {
- top: -200px;
-  right: 30px;
-
+ top: 2%;
+  right: -20%;
   
 }
 .menu-button:hover a:nth-child(3):hover {
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
   transition-delay: 0s;
- 
+  transform: scale(1.15);
+  color: white;
 }
 .menu-button:hover a:nth-child(4) {
-  right: 0%;
-  top: -155px;
+  bottom: -8%;
+  left: -20%;
 }
 .menu-button:hover a:nth-child(4):hover {
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
   transition-delay: 0s;
- 
+  transform: scale(1.15);
 }
-*/
+.menu-button:hover a:nth-child(5) {
+  bottom: -10%;
+  right: -20%;
+}
+.menu-button:hover a:nth-child(5):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  transform: scale(1.15);
 
-
+}
+article {
+  position: absolute;  
+  bottom: 0;
+  right: 0; 
+  color: transparent;
+   text-shadow: 0 0 1px #fff;
+  margin-right: 5px;
+  font-size: 1.1em;
+}
+/*-----------------------------MEDIA QUERIES---------------------------------*/
+@media (min-width: 1920px) and (max-width: 2560px)
+  {
+ h1 {  
+  font-size: 2.75em;     
+}
+article {
+    font-size: 1.25em;
+}
+}
 
 @media screen and (max-width: 1024px) 
 {
@@ -409,11 +482,29 @@ input:focus, textarea:focus {
   top: 70%;  
   right: 25%;   
 }
-.cardfront
+ h1 {  
+  font-size: 2em;    
+}
+.menu-button:hover a:nth-child(2) {
+  top: 2%;
+  left: -10%;
+}
+.menu-button:hover a:nth-child(3) {
+ top: 2%;
+  right: -10%;
+}
+.menu-button:hover a:nth-child(4) {
+  bottom: -8%;
+  left: -10%;
+}
+.menu-button:hover a:nth-child(5) {
+  bottom: -10%;
+  right: -10%;
+}
 }
 @media screen and (max-width: 768px)
   {
-h1, h2 {
+h2 {
   font-size: 3.5em;   
  }
  .workco {   
@@ -426,23 +517,76 @@ h1, h2 {
     margin-left: 20px;
     margin-top: 20px;
 }
+#formulaire, #niveau1 {
+   font-size: 0.7em;  
+}
+.menu-button {  
+  height: 425px;  
+}
+.menu-button img {
+  width: 70px;
+}
+.menu-button:hover a:nth-child(2) {
+  top: 5%;
+  left: -10%;
+}
+.menu-button:hover a:nth-child(3) {
+ top: 5%;
+  right: -10%;
+}
+.menu-button:hover a:nth-child(4) {
+  bottom: -8%;
+  left: -10%;
+}
+.menu-button:hover a:nth-child(5) {
+  bottom: -10%;
+  right: -10%;
+}
+article {
+    font-size: 0.85em;
+}
 }
 @media screen and (max-width: 450px)
   {
-h1,h2 {
+    body {  
+    background-image: url("../img/05phone.jpg");
+    animation: flicker 8s infinite alternate;
+}
+
+@keyframes flicker {
+  0%, 31% { background-image: url("../img/05phone.jpg"); }
+  32%,32.5% { background-image: url("../img/05nightphone.jpg"); }
+  32.5%,33% { background-image: url("../img/05phone.jpg"); }
+  33%,33.5% { background-image: url("../img/05nightphone.jpg"); }
+  33.5%,34% { background-image: url("../img/05phone.jpg"); }
+  34%,34.5% { background-image: url("../img/05nightphone.jpg"); }
+  34.5%,35% { background-image: url("../img/05phone5.jpg"); }
+  35.5%,36% { background-image: url("../img/05nightphone.jpg"); }
+  36.5%,52% { background-image: url("../img/05nightphone.jpg"); }
+  76%,76.5% { background-image: url("../img/05phone.jpg"); }
+  76.5%,77% { background-image: url("../img/05nightphone.jpg"); }
+  77%,77.5% { background-image: url("../img/05phone.jpg"); }
+  77.5%,78% { background-image: url("../img/05nightphone.jpg"); }
+  78.5%,100% { background-image: url("../img/05phone.jpg"); }
+  
+}
+   h1 {  
+  font-size: 1.5em;    
+}
+h2 {
   font-size: 3.5em;  
  }
  .workco {   
-    height: 400px;
+    height: 425px;
     width: 66%;  
 }
 .cardfront, .cardback {  
-  top: 50%;  
+  top: 45%;  
   left: 5%;   
 }
 .cardfront2, .cardback2 {  
-  top: 30%;  
-  right: 5%;   
+  top: 50%;  
+  right: 5%; 
 }
 .curtain-content span {
   display: none;
@@ -453,10 +597,8 @@ section {
   flex-direction: column;
 }
 article {
-  position: absolute;  
-  bottom: -25%;
+  bottom: -275px;
   right: 0; 
-  
 }
 #chevron {    
     margin-top: 10px;
@@ -481,15 +623,15 @@ article {
   {
 
  .workco {   
-    height: 400px;
+    height: 420px;
     width: 85%;  
 }
 .cardfront, .cardback {  
-  top: 50%;  
+  top: 40%;  
   left: 5%;   
 }
 .cardfront2, .cardback2 {  
-  top: 30%;  
+  top: 42%;  
   right: 5%;   
 }
 .curtain-content span {

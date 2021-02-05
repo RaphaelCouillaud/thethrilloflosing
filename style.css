@@ -183,11 +183,11 @@ body {
 } 
 @-webkit-keyframes neonseven  {
    from {
-    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px #30fcfc, 0 0 70px #30fcfc, 0 0 80px #30fcfc, 0 0 100px #30fcfc, 0 0 150px #30fcfc;
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px #08446c, 0 0 70px #08446c, 0 0 80px #08446c, 0 0 100px #08446c, 0 0 150px #08446c;
     opacity: 0.8;
   }
   to {
-    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 25px #30fcfc, 0 0 35px #30fcfc, 0 0 40px #30fcfc, 0 0 50px #30fcfc, 0 0 75px #30fcfc;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 25px #08446c, 0 0 35px #08446c, 0 0 40px #08446c, 0 0 50px #08446c, 0 0 75px #08446c;
     opacity: 0.2;
   }
 }
@@ -201,32 +201,15 @@ body {
 } 
 @-webkit-keyframes neoneight  {
   from {
-    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px #d8ccac, 0 0 70px #d8ccac, 0 0 80px #d8ccac, 0 0 100px #d8ccac, 0 0 150px #d8ccac;
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px #602414, 0 0 70px #602414, 0 0 80px #602414, 0 0 100px #602414, 0 0 150px #602414;
     opacity: 0.8;
   }
   to {
-    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 25px #d8ccac, 0 0 35px #d8ccac, 0 0 40px #d8ccac, 0 0 50px #d8ccac, 0 0 75px #d8ccac;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 25px #602414, 0 0 35px #602414, 0 0 40px #602414, 0 0 50px #602414, 0 0 75px #602414;
     opacity: 0.2;
   }
 }
-.container ul li:nth-child(9) a:before {  
-   /*text-shadow: -4px 0 #f81404, 0 4px #f81404, 4px 0 #f81404, 0 -4px #f81404; */
-}
-.container ul li:nth-child(9) a:hover {
-  animation: neonnine 1.5s ease-in-out infinite alternate;
-    -webkit-animation: neonnine 1.5s ease-in-out infinite alternate;
-     -moz-animation: neonnine 1.5s ease-in-out infinite alternate;
-} 
-@-webkit-keyframes neonnine {
-  from {
-    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px #f81404, 0 0 70px #f81404, 0 0 80px #f81404, 0 0 100px #f81404, 0 0 150px #f81404;
-    opacity: 0.8;
-  }
-  to {
-    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 25px #f81404, 0 0 35px #f81404, 0 0 40px #f81404, 0 0 50px #f81404, 0 0 75px #f81404;
-    opacity: 0.2;
-  }
-}
+
 
 
 
@@ -340,6 +323,10 @@ a {
     width: 100%;
     text-align: center;    
     /*text-shadow: -1.5px 0 1.5px white, 0 1.5px 1.5px white, 1.5px 0 1.5px white, 0 -1.5px 20px white;*/
+}
+.curtain-content p {
+    color: transparent;
+   text-shadow: 0 0 2px #fff;
 }
 .curtain-content i {
     margin-right: 15px;
