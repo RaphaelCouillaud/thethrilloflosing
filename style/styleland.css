@@ -368,27 +368,54 @@ figure img {
 }
 /*-------------------------------NAV FOOTER-------------------------*/
 .to-top {
-	position: fixed;
-	bottom: 50px;
-	right: 10px;
-	font-size: 1.25em;
-	color: transparent;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  font-size: 1.25em;
+  color: transparent;
    text-shadow: 0 0 10px #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	opacity: 0;
-	pointer-events: none;
-	transition: all 0.4s;
-	margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+  margin-right: 10px;
 }
 .to-top.active {
-	bottom: 50px;
-	pointer-events: auto;
-	opacity: 0.9;
+  bottom: 50px;
+  pointer-events: auto;
+  opacity: 0.9;
 }
-.to-top i {
-
+.to-right {
+  position: relative;
+  bottom: 0px;
+  right: 10px;
+  font-size: 2em;
+  color: white;
+   text-shadow: 0 0 5px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  pointer-events: auto;
+  transition: all 0.4s;
+  margin-right: 10px;
+}
+.to-left {
+  position: relative;
+  bottom: 0px;
+  left: 10px;
+  font-size: 2em;
+  color: white;
+   text-shadow: 0 0 5px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  pointer-events: auto;
+  transition: all 0.4s;
+  margin-right: 10px;
 }
 
 /*-----------------------------MEDIA QUERIES---------------------------------*/
@@ -586,7 +613,7 @@ figure img {
 @media screen and (max-width: 450px)
   {
       h1 {  
-  font-size: 1.5em;    
+  font-size: 1em;    
 }
 #chevron {    
     margin-top: 10px;
@@ -674,7 +701,10 @@ figure img {
 #section8 .blocimgleft { 
   width: 310px;
 }
-.curtain-content span {
+.curtain-content span, .to-left  {
   display: none;
+}
+.to-right, .to-top {  
+  font-size: 1.5em;
 }
 }

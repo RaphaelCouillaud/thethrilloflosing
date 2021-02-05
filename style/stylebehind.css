@@ -132,22 +132,17 @@ section {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;  
+  background-position: top center; 
+
 }
 #section1 {	
   background-image: url("../img/behind/05blur.jpg"); /* background de la section suivante*/
-
-
 }
 #section2 {	
-  background-image: url("../img/behind/03blur.jpg");   
-
+  background-image: url("../img/behind/03blur.jpg");  
 }
 #section3 {	
-  background-image: url("../img/behind/09blur.jpg");   
-
-
-
+  background-image: url("../img/behind/09blur.jpg");  
 }
 #section4 {	
   background-image: url("../img/behind/04blur.jpg");   
@@ -383,10 +378,36 @@ figure img {
 	pointer-events: auto;
 	opacity: 0.9;
 }
-.to-top i {
-
+.to-right {
+	position: relative;
+	bottom: 0px;
+	right: 10px;
+	font-size: 2em;
+	color: white;
+   text-shadow: 0 0 5px #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.8;
+	pointer-events: auto;
+	transition: all 0.4s;
+	margin-right: 10px;
 }
-
+.to-left {
+	position: relative;
+	bottom: 0px;
+	left: 10px;
+	font-size: 2em;
+	color: white;
+   text-shadow: 0 0 5px #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.8;
+	pointer-events: auto;
+	transition: all 0.4s;
+	margin-right: 10px;
+}
 
 
 /*-----------------------------MEDIA QUERIES---------------------------------*/
@@ -542,7 +563,7 @@ figure img {
 @media screen and (max-width: 450px)
   {
      h1 {  
-  font-size: 1.5em;    
+  font-size: 1em;
 }
 #chevron {    
     margin-top: 10px;
@@ -563,7 +584,7 @@ figure img {
     top: -16px;
 }
 h2 {  
-  font-size: 4.75em; 
+  font-size: 4em; 
 } 
 figure {     
   height: 100px; 
@@ -611,7 +632,10 @@ figure img {
   width: 255px;
   height: 35px;  
 }
-.curtain-content span {
+.curtain-content span, .to-left  {
   display: none;
+}
+.to-right, .to-top {	
+	font-size: 1.5em;
 }
 }

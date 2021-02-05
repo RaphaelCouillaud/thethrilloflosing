@@ -327,6 +327,7 @@ a {
 .curtain-content p {
     color: transparent;
    text-shadow: 0 0 2px #fff;
+   display: none;
 }
 .curtain-content i {
     margin-right: 15px;
@@ -460,7 +461,16 @@ h1 span:nth-child(8n)
 	100% { text-shadow: 5px 0 0 rgba(0, 0, 0, 0); }
 }
 
-
+article {
+  position: fixed; 
+  bottom: 0;
+  right: 0; 
+  color: transparent;
+   text-shadow: 0 0 1px #fff;
+  margin-right: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
 
 
 /*-----------------------------MEDIA QUERIES---------------------------------*/
@@ -525,6 +535,12 @@ h1 span:nth-child(8n)
     top: -16px;
 }
 .curtain-content span {
+  display: none;
+}
+.curtain-content p {    
+   display: block;
+}
+article {
   display: none;
 }
 }
