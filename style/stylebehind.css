@@ -509,6 +509,7 @@ figure {
 }
 figure img {    
   background-size: cover;
+  background: url("../img/behind/filmbehind2.png");  
 }
 .blocimg, .blocimgleft {
    width: 280px;
