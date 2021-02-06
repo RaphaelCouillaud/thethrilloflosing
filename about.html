@@ -51,13 +51,15 @@
          
          
         
-        <section>
-            <div class="workco">
+        <section>       
+       </section>
+
+        <div class="workco">
                 <div class="cardfront">
                     <h2 class="cardtext">laura-mary carter</h2>                    
                 </div>
                 <div class="cardback">
-                    <p class="cardtext">Hailing from London, Laura-Mary spent her teens borrowing guitars from friends in order to teach herself how to play and develop her own sound. Influenced by strong female rock icons of her youth, she began working with drummer Steven Ansell, and soon established herself as the guitar-thrashing half of internationally revered British punk-rock duo Blood Red Shoes.<br> As part of the band, Laura-Mary has released five studio albums, receiving resounding critical acclaim and a worldwide following of devoted fans. During time away from Blood Red Shoes, Laura-Mary began writing songs in a different vein to their usual style. Alongside this, she has graced the main stages of major international rock festivals, often finding herself the only female performer on the main stages of the likes of Reading and Leeds in years 2012 and 2014.<br>
+                    <p class="cardtext">Hailing from London, Laura-Mary spent her teens borrowing guitars from friends in order to teach herself how to play and develop her own sound. Influenced by strong female rock icons of her youth, she began working with drummer Steven Ansell, and soon established herself as the guitar-thrashing half of internationally revered British punk-rock duo Blood Red Shoes.<br><br>As part of the band, Laura-Mary has released five studio albums, receiving resounding critical acclaim and a worldwide following of devoted fans. During time away from Blood Red Shoes, Laura-Mary began writing songs in a different vein to their usual style. Alongside this, she has graced the main stages of major international rock festivals, often finding herself the only female performer on the main stages of the likes of Reading and Leeds in years 2012 and 2014.<br><br>
                     <span>© 2021 PRS Foundation</span></p>
                 </div>
             </div>
@@ -66,13 +68,11 @@
                     <h2 class="cardtext">the thrill of losing</h2>                    
                 </div>
                 <div class="cardback2">
-                    <p class="cardtext">Meanwhile, alternating world wide tours with her band and US road trips, Laura-Mary began to turn her finest living pictures into a collection full of unforgettable wandering moments.<br> She explores themes of loneliness and spotlight these wide open spaces between gloom and glam. All the places and all the people she has met along the way and the fugitive signs she has passed through resonate throughout the journey.<br>
+                    <p class="cardtext">Meanwhile, alternating world wide tours with her band and US road trips, Laura-Mary began to turn her finest living pictures into a collection full of unforgettable wandering moments.<br><br> She explores themes of loneliness and spotlight these wide open spaces between gloom and glam. All the places and all the people she has met along the way and the fugitive signs she has passed through resonate throughout the journey.<br><br>
                     In 2020, Laura-Mary began posting on her Instagram account named "thethrilloflosing" the photographs that compile nearly a decade of memories.</p>
                 </div>
             </div>
-    	
-        
-       </section>
+
 
        	<article><p><i class="fas fa-camera-retro"></i> by Emmanuel Poteau<br>e-po.fr / visualmusic</p></article>
 
@@ -90,13 +90,23 @@
     </main>
             
            
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript">
+            $(function glitchEffects(){
+                $glitch = $('<div class="glitch"></div>')
+                var x = (Math.random() * 200);
+                var y = (Math.random() * 200);
 
-        <footer>
-        	
-
-            
-
-        </footer>   
+                $glitch.css({
+                    'left' : x+'px',
+                    'top' : y+'px',
+                }).appendTo('section').fadeOut(200, function(){
+                    $(this).remove();
+                    glitchEffects();
+                });
+            })();
+        </script>
+        
         <script src="index.js"></script>
        
     </body>

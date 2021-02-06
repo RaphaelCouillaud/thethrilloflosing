@@ -208,7 +208,7 @@ section {
 }
 .blocimg a, .blocimgleft a {
  pointer-events: auto;
-	cursor: default;
+	cursor: pointer;
 }
 .blocimg a:active, .blocimgleft a:active {
  pointer-events: none;
@@ -511,10 +511,24 @@ figure img {
   width: 450px;
 }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 800px)
   {
+h1 {  
+  font-size: 1.25em;    
+}
+.fa-chevron-up {
+   font-size: 1.25em;
+ }
+#chevron2 {
+    position: relative;
+    top: -10px;
+}
+#chevron3 {
+    position: relative;
+    top: -20px;
+}
 #chevron {    
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 20px;
 }
 h2 {  
@@ -525,6 +539,10 @@ figure {
 }
 figure img {    
   background-size: cover;
+   
+}
+section {
+    min-height: 60vh; 
 }
 .blocimg, .blocimgleft {
    width: 280px;
@@ -579,7 +597,7 @@ figure img {
 @media screen and (max-width: 450px)
   {
      h1 {  
-  font-size: 1em;
+  visibility: hidden;
 }
 #chevron {    
     margin-top: 10px;
@@ -600,15 +618,17 @@ figure img {
     top: -16px;
 }
 h2 {  
-  font-size: 4em; 
+  font-size: 5em; 
 } 
 figure {     
   height: 100px; 
 }
 figure img {    
   background-size: cover;
-  animation: putmeinamovie 50s linear infinite;  
-
+   animation: none;  
+}
+section {
+    min-height: 90vh; 
 }
 .blocimg, .blocimgleft {
    width: 250px;
@@ -617,36 +637,38 @@ figure img {
   width: 300px;
 }
 #section4 .blocimg { 
-  width: 275px;
+  width: 315px;
 }
 #section3 .blocimg {
   width: 295px;
   margin-top: 0px;
 }
 #section2 .blocimgleft {
-   width: 270px;
+   width: 290px;
 }
 #section2 .blocimg {
   width: 320px;
 }
 #section1 .blocimg {
-  width: 280px;
+  width: 295px;
 }
 #section1 .blocimgleft {
-  width: 280px;
+  width: 290px;
 }
 #section3 .blocimgleft {
   width: 300px;
-  margin-top: 50px;
+  margin-top: 75px;
 }
-
+#section5 .blocimgleft {
+  width: 305px;
+}
 #section5 .blocimg { 
-  width: 310px;
+  width: 320px;
 }
 .figcaption1 { 
   
-  width: 255px;
-  height: 35px;  
+  width: 150px;
+  height: 25px;  
 }
 .curtain-content span, .to-left  {
   display: none;

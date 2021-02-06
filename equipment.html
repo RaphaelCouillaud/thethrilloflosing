@@ -51,7 +51,7 @@
          
          
         
-        <section>
+        <section></section>
             <div class="workco">
                 <div class="cardfront">
                     <h2 class="cardtext">compact film camera</h2>                    
@@ -66,7 +66,7 @@
                     <h2 class="cardtext">specifications</h2>                    
                 </div>
                 <div class="cardback2">
-                    <p class="cardtext">The Yashica T5 is a weather-proof point and shoot thats small enough to fit in the pocket yet its capable of producing incredibly sharp and bright photos with distinctive colour rendition. The Tessar T* 3.5/35mm multi-coated lens is made by the famous Carl Zeiss, exclusively for this model. It's a step above the Yashica T4 as it has the same specs plus it's weather-proof, has improved ergonomics and a waist-level viewfinder. Suitable for all types of photography - portraits, travel, fashion, street...<br>
+                    <p class="cardtext">The Yashica T5 is a weather-proof point and shoot thats small enough to fit in the pocket yet its capable of producing incredibly sharp and bright photos with distinctive colour rendition. The Tessar T* 3.5/35mm multi-coated lens is made by the famous Carl Zeiss, exclusively for this model. It's a step above the Yashica T4 as it has the same specs plus it's weather-proof, has improved ergonomics and a waist-level viewfinder. Suitable for all types of photography - portraits, travel, fashion, street...<br><br>
                     <i class="fas fa-chevron-right"></i>35mm<br>
                     <i class="fas fa-chevron-right"></i>Fully Automatic<br>
                     <i class="fas fa-chevron-right"></i>f3.5 – f16<br>
@@ -80,7 +80,7 @@
             </div>
     	
         
-       </section>
+    
 
        
 
@@ -90,13 +90,22 @@
     </main>
             
            
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript">
+            $(function glitchEffects(){
+                $glitch = $('<div class="glitch"></div>')
+                var x = (Math.random() * 200);
+                var y = (Math.random() * 200);
 
-        <footer>
-        	
-
-            
-
-        </footer>   
+                $glitch.css({
+                    'left' : x+'px',
+                    'top' : y+'px',
+                }).appendTo('section').fadeOut(200, function(){
+                    $(this).remove();
+                    glitchEffects();
+                });
+            })();
+        </script>
         <script src="index.js"></script>
        
     </body>

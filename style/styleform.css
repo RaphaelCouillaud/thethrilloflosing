@@ -272,7 +272,7 @@ input:focus, textarea:focus {
 }
 .cardfront2, .cardback2 {
    position: absolute;
-  top: 70%;  
+  top: 50%;  
   right: 55%;  
   width: 100%;
   height: 100%;
@@ -288,8 +288,8 @@ input:focus, textarea:focus {
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   color: white;
 }
-.cardfront2 {
- /*background: transparent;*/
+/*.cardfront2 {
+ background: transparent;
  display: flex;
  border: none;
  background: rgba(250, 150, 250, 0.2);
@@ -311,7 +311,7 @@ input:focus, textarea:focus {
   -webkit-transform: rotateX(0);
           transform: rotateX(0);
 }
-
+*/
 /*-----------------------------LINKS---------------------------------*/
 
 #niveau1 {
@@ -339,6 +339,25 @@ input:focus, textarea:focus {
 .menu-button h3 { 
   font-size: 3em; 
   margin: auto;
+   animation: flick 8s infinite alternate;
+}
+
+@keyframes flick {   
+  0%, 31% { opacity: 0.8; }
+  32%,32.5% { opacity: 0.2; }
+  32.5%,33% { opacity: 0.8; }
+  33%,33.5% { opacity: 0.2; }
+  33.5%,34% { opacity: 0.8; }
+  34%,34.5% { opacity: 0.2; }
+  34.5%,35% { opacity: 0.8; }
+  35.5%,36% { opacity: 0.2; }
+  36.5%,52% { opacity: 0.2; }
+  76%,76.5% { opacity: 0.8; }
+  76.5%,77% { opacity: 0.2; }
+  77%,77.5% { opacity: 0.8; }
+  77.5%,78% { opacity: 0.2; }
+  78.5%,100% { opacity: 0.8; } 
+
 }
 .fa-facebook-f, .fa-spotify, .fa-instagram { 
   font-size: 3em; 
@@ -404,8 +423,8 @@ input:focus, textarea:focus {
   height: 100px;
 }
 .menu-button:hover a:nth-child(2) {
-  top: 2%;
-  left: -20%;
+  top: 20%;
+  left: -30%;
 
 }
 
@@ -417,8 +436,8 @@ input:focus, textarea:focus {
 
 }
 .menu-button:hover a:nth-child(3) {
- top: 2%;
-  right: -20%;
+ top: 20%;
+  right: -30%;
   
 }
 .menu-button:hover a:nth-child(3):hover {
@@ -429,8 +448,8 @@ input:focus, textarea:focus {
   color: white;
 }
 .menu-button:hover a:nth-child(4) {
-  bottom: -8%;
-  left: -20%;
+  bottom: 10%;
+  left: -30%;
 }
 .menu-button:hover a:nth-child(4):hover {
   -webkit-transition-delay: 0s;
@@ -439,8 +458,8 @@ input:focus, textarea:focus {
   transform: scale(1.15);
 }
 .menu-button:hover a:nth-child(5) {
-  bottom: -10%;
-  right: -20%;
+  bottom: 10%;
+  right: -30%;
 }
 .menu-button:hover a:nth-child(5):hover {
   -webkit-transition-delay: 0s;
@@ -478,37 +497,40 @@ article {
   top: 50%;  
   left: 25%;    
 } 
-.cardfront2, .cardback2 {
-  top: 70%;  
-  right: 25%;   
-}
+
  h1 {  
   font-size: 2em;    
 }
 .menu-button:hover a:nth-child(2) {
-  top: 2%;
-  left: -10%;
+  top: 20%;
+  left: -20%;
 }
 .menu-button:hover a:nth-child(3) {
- top: 2%;
-  right: -10%;
+ top: 20%;
+  right: -20%;
 }
 .menu-button:hover a:nth-child(4) {
-  bottom: -8%;
-  left: -10%;
+  bottom: 10%;
+  left: -20%;
 }
 .menu-button:hover a:nth-child(5) {
-  bottom: -10%;
-  right: -10%;
+  bottom: 10%;
+  right: -20%;
 }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 800px)
   {
+    section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
 h2 {
   font-size: 3.5em;   
  }
  .workco {   
     height: 425px;
+  width: 50%; 
 }
  .cardback p, .cardback2 p {
   font-size: 1em;
@@ -527,19 +549,19 @@ h2 {
   width: 70px;
 }
 .menu-button:hover a:nth-child(2) {
-  top: 5%;
+  top: 25%;
   left: -10%;
 }
 .menu-button:hover a:nth-child(3) {
- top: 5%;
+ top: 25%;
   right: -10%;
 }
 .menu-button:hover a:nth-child(4) {
-  bottom: -8%;
+  bottom: 5%;
   left: -10%;
 }
 .menu-button:hover a:nth-child(5) {
-  bottom: -10%;
+  bottom: 3%;
   right: -10%;
 }
 article {
@@ -581,23 +603,16 @@ h2 {
     width: 66%;  
 }
 .cardfront, .cardback {  
-  top: 45%;  
+  top: 50%;  
   left: 5%;   
 }
-.cardfront2, .cardback2 {  
-  top: 50%;  
-  right: 5%; 
-}
+
 .curtain-content span {
   display: none;
 }
-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
+
 article {
-  bottom: -275px;
+  bottom: 0px;
   right: 0; 
 }
 #chevron {    
@@ -627,11 +642,11 @@ article {
     width: 85%;  
 }
 .cardfront, .cardback {  
-  top: 40%;  
+  top: 60%;  
   left: 5%;   
 }
 .cardfront2, .cardback2 {  
-  top: 42%;  
+  top: 0%;  
   right: 5%;   
 }
 .curtain-content span {
@@ -642,12 +657,7 @@ section {
   display: flex;
   flex-direction: column;
 }
-article {
-  position: absolute;  
-  bottom: -25%;
-  right: 0; 
-  
-}
+
 #chevron {    
     margin-top: 10px;
     margin-left: -15px;

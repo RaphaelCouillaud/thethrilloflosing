@@ -213,7 +213,7 @@ section {
 }
 .blocimg a, .blocimgleft a {
  pointer-events: auto;
-  cursor: default;
+  cursor: pointer;
 }
 .blocimg a:active, .blocimgleft a:active {
  pointer-events: none;
@@ -225,8 +225,6 @@ section {
   opacity: 0.99;
   overflow: hidden;
   position: relative;
-
-  
    box-shadow: 2px 2px 5px 10px rgba(0, 0, 0, .6);
 }
 .bloclink:before {
@@ -240,11 +238,16 @@ section {
   left: 0;
   z-index: 2;
   transition-property: top, opacity;
+    -webkit-transition: top, opacity;
+    -moz-transition: top, opacity;
+    -o-transition: top, opacity;
   transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
   backdrop-filter: blur(15px);
   /*border-top: 3px solid rgba(255, 255, 255, 0.8);*/
   box-shadow: 0px -5px 10px 1px rgba(0, 0, 0, .7);
-
 }
 .bloclink img {
   display: block;
@@ -260,8 +263,6 @@ section {
   left: 0;
   z-index: 3;
    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
-
-
 }
 .desc span {
   display: block;
@@ -269,7 +270,13 @@ section {
   position: relative;
   top: 100px;
   transition-property: top, opacity;
+    -webkit-transition: top, opacity;
+    -moz-transition: top, opacity;
+    -o-transition: top, opacity;
   transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
   transition-delay: 0s;
 }
 .title {
@@ -292,9 +299,15 @@ section {
 }
 .bloclink:focus .title, .bloclink:hover .title {
   transition-delay: 0.15s;
+    -webkit-transition-delay: 0.15s;
+    -moz-transition-delay: 0.15s;
+    -o-transition-delay: 0.15s;
 }
 .bloclink:focus .info, .bloclink:hover .info {
   transition-delay: 0.25s;
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay: 0.25s;
+    -o-transition-delay: 0.25s;
 }
 figure {    
   width: 100%;
@@ -481,10 +494,24 @@ figure img {
 }
 
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 800px)
   {
+h1 {  
+  font-size: 1.25em;    
+}
+.fa-chevron-up {
+   font-size: 1.25em;
+ }
+#chevron2 {
+    position: relative;
+    top: -10px;
+}
+#chevron3 {
+    position: relative;
+    top: -20px;
+}
 #chevron {    
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 20px;
 }
 h2 {  
@@ -495,6 +522,9 @@ figure {
 }
 figure img {    
   background-size: cover;
+}
+section {
+    min-height: 60vh; 
 }
 .blocimg, .blocimgleft {
    width: 280px;
@@ -545,8 +575,8 @@ figure img {
 }
 @media screen and (max-width: 450px)
   {
-       h1 {  
-  font-size: 1em;    
+h1 {  
+  visibility: hidden;
 }
 #chevron {    
     margin-top: 10px;
@@ -574,8 +604,10 @@ figure {
 }
 figure img {    
   background-size: cover;
-  animation: putmeinamovie 50s linear infinite;  
-
+   animation: none;  
+}
+section {
+    min-height: 90vh; 
 }
 .blocimg, .blocimgleft {
    width: 250px;
@@ -603,13 +635,18 @@ figure img {
 }
 #section1 .blocimgleft {
   width: 300px;
-   margin-top: 50px;
+   margin-top: 75px;
 }
 #section3 .blocimgleft {
   width: 315px;  
 }
 .curtain-content span, .to-left  {
   display: none;
+}
+.figcaption2 { 
+  
+  width: 170px;
+  height: 25px;  
 }
 .to-right, .to-top {  
   font-size: 1.5em;
