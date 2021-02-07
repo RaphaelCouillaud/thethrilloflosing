@@ -287,22 +287,23 @@ section {
 }
 .bloclink:focus:before,
 .bloclink:focus span, .bloclink:hover:before,
-.bloclink:hover span {
+.bloclink:hover span, .bloclink:active:before,
+.bloclink:active span {
   opacity: 1;
 }
-.bloclink:focus:before, .bloclink:hover:before {
+.bloclink:focus:before, .bloclink:hover:before, .bloclink:active:before {
   top: 75%;
 }
-.bloclink:focus span, .bloclink:hover span {
+.bloclink:focus span, .bloclink:hover span, .bloclink:active span {
   top: 0;
 }
-.bloclink:focus .title, .bloclink:hover .title {
+.bloclink:focus .title, .bloclink:hover .title, .bloclink:active .title {
   transition-delay: 0.15s;
   	-webkit-transition-delay: 0.15s;
   	-moz-transition-delay: 0.15s;
   	-o-transition-delay: 0.15s;
 }
-.bloclink:focus .info, .bloclink:hover .info {
+.bloclink:focus .info, .bloclink:hover .info, .bloclink:active .info {
   transition-delay: 0.25s;
   	-webkit-transition-delay: 0.25s;
   	-moz-transition-delay: 0.25s;
@@ -625,7 +626,6 @@ figure {
 }
 figure img {    
   background-size: cover;
-   animation: none;  
 }
 section {
     min-height: 90vh; 

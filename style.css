@@ -14,10 +14,7 @@ body {
 	align-items: center;
 	width: 100%;
 	height: 130vh;
-
-  
 }
-
 .container ul {
 	margin: 0 auto;
 	padding: 0;
@@ -29,9 +26,7 @@ body {
 .container ul li {
 	position: relative;
 	list-style: none;	
-
-	/*top: 0px;*/
-	
+	/*top: 0px;*/	
 }
 .container ul li a {
 	position: relative;
@@ -44,7 +39,6 @@ body {
   font-style: italic;  
   color: transparent;
    text-shadow: 0 0 10px #fff; 
-
 }
 .container ul li a:before {
 	content: attr(data-text);
@@ -58,20 +52,18 @@ body {
 		-webkit-transition: width 0.75s;
   		-moz-transition: width 0.75s;
 	white-space: nowrap;
-	transform: scale(1.1);
+	transform: scale(1.05);
    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
    font-weight: bolder; 
-
 }
-.container ul li a:hover:before, .container ul li.active a:before {
-	width: 105%;
+.container ul li a:hover:before, .container ul li.active a:before, .container ul li a:active:before {
+	width: 110%;
 }
 .container ul li:nth-child(1) a:before {	
   /* text-shadow: -4px 0 #387484, 0 4px #387484, 4px 0 #387484, 0 -4px #387484;*/
   /* color: white;*/
-
 }
-.container ul li:nth-child(1) a:hover {
+.container ul li:nth-child(1) a:hover, .container ul li:nth-child(1) a:active {
 	animation: neonone 1.5s ease-in-out infinite alternate;
 		-webkit-animation: neonone 1.5s ease-in-out infinite alternate;
  		 -moz-animation: neonone 1.5s ease-in-out infinite alternate;
@@ -90,7 +82,7 @@ body {
 .container ul li:nth-child(2) a:before {	
  /*  text-shadow: -4px 0 #474642, 0 4px #474642, 4px 0 #474642, 0 -4px #474642; */
 }
-.container ul li:nth-child(2) a:hover {
+.container ul li:nth-child(2) a:hover, .container ul li:nth-child(2) a:active {
 	animation: neontwo 1.5s ease-in-out infinite alternate;
 		-webkit-animation: neontwo 1.5s ease-in-out infinite alternate;
  		 -moz-animation: neontwo 1.5s ease-in-out infinite alternate;
@@ -108,7 +100,7 @@ body {
 .container ul li:nth-child(3) a:before {	
   /*text-shadow: -4px 0 #ff8c00, 0 4px #ff8c00, 4px 0 #ff8c00, 0 -4px #ff8c00; */
 }
-.container ul li:nth-child(3) a:hover {
+.container ul li:nth-child(3) a:hover, .container ul li:nth-child(3) a:active {
 	animation: neonthree 1.5s ease-in-out infinite alternate;
 		-webkit-animation: neonthree 1.5s ease-in-out infinite alternate;
  		 -moz-animation: neonthree 1.5s ease-in-out infinite alternate;
@@ -126,7 +118,7 @@ body {
 .container ul li:nth-child(4) a:before {	
   /* text-shadow: -4px 0 #f5ed0a, 0 4px #f5ed0a, 4px 0 #f5ed0a, 0 -4px #f5ed0a;*/ 
 }
-.container ul li:nth-child(4) a:hover {
+.container ul li:nth-child(4) a:hover, .container ul li:nth-child(4) a:active {
 	animation: neonfour 1.5s ease-in-out infinite alternate;
 		-webkit-animation: neonfour 1.5s ease-in-out infinite alternate;
  		 -moz-animation: neonfour 1.5s ease-in-out infinite alternate;
@@ -144,7 +136,7 @@ body {
 .container ul li:nth-child(5) a:before {	
    /*text-shadow: -4px 0 #ff1177, 0 4px #ff1177, 4px 0 #ff1177, 0 -4px #ff1177; */
 }
-.container ul li:nth-child(5) a:hover {
+.container ul li:nth-child(5) a:hover, .container ul li:nth-child(5) a:active {
 	animation: neonfive 1.5s ease-in-out infinite alternate;
 		-webkit-animation: neonfive 1.5s ease-in-out infinite alternate;
  		 -moz-animation: neonfive 1.5s ease-in-out infinite alternate;
@@ -162,7 +154,7 @@ body {
 .container ul li:nth-child(6) a:before {	
   /* text-shadow: -4px 0 #18a4fc, 0 4px #18a4fc, 4px 0 #18a4fc, 0 -4px #18a4fc; */
 }
-.container ul li:nth-child(6) a:hover {
+.container ul li:nth-child(6) a:hover, .container ul li:nth-child(6) a:active {
 	animation: neonsix 1.5s ease-in-out infinite alternate;
 		-webkit-animation: neonsix 1.5s ease-in-out infinite alternate;
  		 -moz-animation: neonsix 1.5s ease-in-out infinite alternate;
@@ -180,7 +172,7 @@ body {
 .container ul li:nth-child(7) a:before {	
    /*text-shadow: -4px 0 #08d494, 0 4px #08d494, 4px 0 #08d494, 0 -4px #08d494;*/ 
 }
-.container ul li:nth-child(7) a:hover {
+.container ul li:nth-child(7) a:hover, .container ul li:nth-child(7) a:active {
 	animation: neonseven 1.5s ease-in-out infinite alternate;
 		-webkit-animation: neonseven 1.5s ease-in-out infinite alternate;
  		 -moz-animation: neonseven 1.5s ease-in-out infinite alternate;
@@ -198,7 +190,7 @@ body {
 .container ul li:nth-child(8) a:before {	
    /*text-shadow: -4px 0 #1b3bb6, 0 4px #1b3bb6, 4px 0 #1b3bb6, 0 -4px #1b3bb6; */
 }
-.container ul li:nth-child(8) a:hover {
+.container ul li:nth-child(8) a:hover, .container ul li:nth-child(8) a:active {
 	animation: neoneight 1.5s ease-in-out infinite alternate;
 		-webkit-animation: neoneight 1.5s ease-in-out infinite alternate;
  		 -moz-animation: neoneight 1.5s ease-in-out infinite alternate;
@@ -213,9 +205,6 @@ body {
     opacity: 0.2;
   }
 }
-
-
-
 
 .container #picture {
 	position: absolute;
@@ -232,8 +221,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-
-
 }
 .container #picture.one {
 	background-image: url("img/behind/frame.jpg");
@@ -373,92 +360,80 @@ a {
   color: transparent;
    text-shadow: 0 0 2px #fff;
 }
-h1:hover
-{
+h1:hover, h1:active {
 	text-indent: 25px;
 }
-h1:hover span
-{
+h1:hover span, h1:active span {
 	-ms-animation-name: smoke;
 	-moz-animation-name: smoke;
 	-webkit-animation-name: smoke;
 	-o-animation-name: smoke;
 	animation-name: smoke;
 }
-h1 span:nth-child(n)
-{
+h1 span:nth-child(n) {
 	-ms-animation-duration: 1200ms;
 	-moz-animation-duration: 1200ms;
 	-webkit-animation-duration: 1200ms;
 	-o-animation-duration: 1200ms;
 	animation-duration: 1200ms;
 }
-h1 span:nth-child(2n)
-{
+h1 span:nth-child(2n) {
 	-ms-animation-duration: 1100ms;
 	-moz-animation-duration: 1100ms;
 	-webkit-animation-duration: 1100ms;
 	-o-animation-duration: 1100ms;
 	animation-duration: 1100ms;
 }
-h1 span:nth-child(3n)
-{
+h1 span:nth-child(3n) {
 	-ms-animation-duration: 1300ms;
 	-moz-animation-duration: 1300ms;
 	-webkit-animation-duration: 1300ms;
 	-o-animation-duration: 1300ms;
 	animation-duration: 1300ms;
 }
-h1 span:nth-child(4n)
-{	
+h1 span:nth-child(4n) {	
 	-ms-animation-duration: 900ms;
 	-moz-animation-duration: 900ms;
 	-webkit-animation-duration: 900ms;
 	-o-animation-duration: 900ms;
 	animation-duration: 900ms;
 }
-h1 span:nth-child(5n)
-{
+h1 span:nth-child(5n) {
 	-ms-animation-duration: 1000ms;
 	-moz-animation-duration: 1000ms;
 	-webkit-animation-duration: 1000ms;
 	-o-animation-duration: 1000ms;
 	animation-duration: 1000ms;
 }
-h1 span:nth-child(6n)
-{
+h1 span:nth-child(6n) {
   -ms-animation-duration: 1400ms;
   -moz-animation-duration: 1400ms;
   -webkit-animation-duration: 1400ms;
   -o-animation-duration: 1400ms;
   animation-duration: 1400ms;
 }
-h1 span:nth-child(7n)
-{
+h1 span:nth-child(7n) {
   -ms-animation-duration: 1100ms;
   -moz-animation-duration: 1100ms;
   -webkit-animation-duration: 1100ms;
   -o-animation-duration: 1100ms;
   animation-duration: 1100ms;
 }
-h1 span:nth-child(8n)
-{
+h1 span:nth-child(8n) {
   -ms-animation-duration: 1500ms;
   -moz-animation-duration: 1500ms;
   -webkit-animation-duration: 1500ms;
   -o-animation-duration: 1500ms;
   animation-duration: 1500ms;
 }
-@-webkit-keyframes smoke
-{
+@-webkit-keyframes smoke {
 	0% { text-shadow: 5px 0 0 rgba(153, 153, 153, 1); }
 	
 	90%	{ text-shadow: -5px -40px 20px rgba(153, 153, 153, 0); }
 	
 	100% { text-shadow: 5px 0 0 rgba(0, 0, 0, 0); }
 }
-@-moz-keyframes smoke
-{
+@-moz-keyframes smoke {
 	0% { text-shadow: 5px 0 0 rgba(153, 153, 153, 1); }
 	
 	90% { text-shadow: -5px -40px 20px rgba(153, 153, 153, 0); }

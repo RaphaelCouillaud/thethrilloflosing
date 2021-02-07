@@ -212,7 +212,6 @@ section {
 #section2 .blocimg {
   width: 575px;  
 }
-
 .blocimg, .blocimgleft {
   width: 500px;
   text-align: center;  
@@ -225,6 +224,7 @@ section {
 .blocimg a:active, .blocimgleft a:active {
  pointer-events: none;
 }
+
 .bloclink {
   display: inline-block;
   margin: 10px;
@@ -255,6 +255,7 @@ section {
   backdrop-filter: blur(15px);
   /*border-top: 3px solid rgba(255, 255, 255, 0.8);*/
   box-shadow: 0px -5px 10px 1px rgba(0, 0, 0, .7);
+
 }
 .bloclink img {
   display: block;
@@ -270,6 +271,8 @@ section {
   left: 0;
   z-index: 3;
    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+
+
 }
 .desc span {
   display: block;
@@ -295,22 +298,23 @@ section {
 }
 .bloclink:focus:before,
 .bloclink:focus span, .bloclink:hover:before,
-.bloclink:hover span {
+.bloclink:hover span, .bloclink:active:before,
+.bloclink:active span {
   opacity: 1;
 }
-.bloclink:focus:before, .bloclink:hover:before {
+.bloclink:focus:before, .bloclink:hover:before, .bloclink:active:before {
   top: 75%;
 }
-.bloclink:focus span, .bloclink:hover span {
+.bloclink:focus span, .bloclink:hover span, .bloclink:active span {
   top: 0;
 }
-.bloclink:focus .title, .bloclink:hover .title {
+.bloclink:focus .title, .bloclink:hover .title, .bloclink:active .title {
   transition-delay: 0.15s;
     -webkit-transition-delay: 0.15s;
     -moz-transition-delay: 0.15s;
     -o-transition-delay: 0.15s;
 }
-.bloclink:focus .info, .bloclink:hover .info {
+.bloclink:focus .info, .bloclink:hover .info, .bloclink:active .info {
   transition-delay: 0.25s;
     -webkit-transition-delay: 0.25s;
     -moz-transition-delay: 0.25s;
@@ -671,7 +675,6 @@ figure {
 }
 figure img {    
   background-size: cover;
-   animation: none;  
 }
 section {
     min-height: 90vh; 
@@ -741,5 +744,8 @@ section {
 }
 .to-right, .to-top {  
   font-size: 1.5em;
+}
+#section3 .blocimg .title {
+  font-size: 1em;
 }
 }
