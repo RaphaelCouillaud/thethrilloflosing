@@ -71,6 +71,7 @@ a {
     overflow-x: hidden; 
     transition: 0.5s; 
     backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px);
 }
 .curtain-content {
     position: relative;
@@ -133,10 +134,11 @@ section {
   background-size: cover;
   filter: grayscale(75%);
  opacity: 0.75;
+ box-shadow: 2px 15px 15px 10px rgba(0, 0, 0, .8);
 }
 .glitch {
   position: absolute;
-  background-image: url("../img/lmcalt.jpg");
+  background-image: url("../img/lmc.jpg");
   background-size: cover;
    width: 100%;
   height: 100%; 
@@ -188,10 +190,11 @@ section {
  display: flex;
  border: none;
  /*background: rgba(250, 150, 250, 0.2);*/
- 
+
 }
 .cardback {
-  backdrop-filter: blur(15px);  
+  backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
   -webkit-transform: rotateX(-180deg);
           transform: rotateX(-180deg);
   display: flex; 
@@ -246,7 +249,8 @@ section {
  
 }
 .cardback2 {
-  backdrop-filter: blur(15px);  
+  backdrop-filter: blur(15px); 
+  -webkit-backdrop-filter: blur(15px); 
   -webkit-transform: rotateX(-180deg);
           transform: rotateX(-180deg);
   display: flex; 

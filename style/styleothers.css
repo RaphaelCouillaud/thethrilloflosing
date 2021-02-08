@@ -59,7 +59,8 @@ a {
   border-bottom-right-radius: 2em;*/ 
     overflow-x: hidden; 
     transition: 0.5s; 
-    backdrop-filter: blur(15px); 
+    backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px); 
 }
 .curtain-content {
     position: relative;
@@ -244,6 +245,7 @@ section {
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
   backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
   /*border-top: 3px solid rgba(255, 255, 255, 0.8);*/
   box-shadow: 0px -5px 10px 1px rgba(0, 0, 0, .7);
 
