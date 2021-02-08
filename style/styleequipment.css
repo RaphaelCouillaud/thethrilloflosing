@@ -125,22 +125,21 @@ section {
   height: 70vh; 
   scroll-behavior: smooth;
   overflow: hidden;
-  background-image: url("../img/portraits/13altglitch.jpg");
+  background-image: url("../img/portraits/13alt.jpg");
   background-size: cover;
-  filter: grayscale(75%);
+  filter: grayscale(50%);
  opacity: 0.75;
  box-shadow: 2px 15px 15px 10px rgba(0, 0, 0, .8);
 }
 .glitch {
   position: absolute;
-  background-image: url("../img/portraits/13.png");
+  background-image: url("../img/portraits/13altglitch2.jpg");
   background-size: cover;
    width: 100%;
   height: 100%; 
   mix-blend-mode: overlay;
   filter: contrast(10);
   transform: translate(-100px, -100px);
-  opacity: 0.5;
   
 }
 
@@ -306,10 +305,10 @@ h2 {
   left: 12.5%;
   width: 75%;
   height: 70vh;   
-  background-image: url("../img/portraits/13alt1glitch.jpg");
+  background-image: url("../img/portraits/13alt1.jpg");
 }
 .glitch {  
-  background-image: url("../img/portraits/13alt1test.jpg");
+  background-image: url("../img/portraits/13alt1glitch.jpg");
   }
  .workco {   
     height: 425px;
@@ -332,10 +331,10 @@ section {
   left: 10%;
   width: 80%;
   height: 70vh;   
-  background-image: url("../img/portraits/13alt1glitch.jpg");
+  background-image: url("../img/portraits/13alt1.jpg");
 }
 .glitch {  
-  background-image: url("../img/portraits/13alt1test.jpg");
+  background-image: url("../img/portraits/13alt1glitch.jpg");
   }
 h2 {
   font-size: 3.5em;  
